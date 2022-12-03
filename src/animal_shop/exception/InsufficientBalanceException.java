@@ -1,2 +1,11 @@
-package animal_shop.exception;public class InsufficientBalanceException {
+package animal_shop.exception;
+
+public class InsufficientBalanceException extends RuntimeException{
+    public InsufficientBalanceException() {
+        super();
+    }
+
+    public InsufficientBalanceException(String message) {
+        super(message);
+    }
 }

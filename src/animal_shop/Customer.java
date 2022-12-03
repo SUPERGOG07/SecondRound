@@ -1,19 +1,50 @@
+package animal_shop;
+
 import java.time.LocalDate;
 
 public class Customer {
 
-    String name;
+    private String name;
 
-    int frequency;
+    private int frequency;
 
-    LocalDate lastTime;
+    private LocalDate lastTime;
 
     @Override
     public String toString() {
-        return "Customer{" +
+        return "animal_shop.Customer{" +
                 "name='" + name + '\'' +
                 ", frequency=" + frequency +
                 ", lastTime=" + lastTime +
                 '}';
+    }
+
+    public Customer(String name) {
+        this.name = name;
+        this.frequency = 0;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getFrequency() {
+        return frequency;
+    }
+
+    public void setFrequency(int frequency) {
+        this.frequency = frequency;
+    }
+
+    public LocalDate getLastTime() {
+        return lastTime;
+    }
+
+    public void setLastTime(LocalDate lastTime) {
+        this.lastTime = lastTime;
     }
 }
